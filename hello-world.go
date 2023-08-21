@@ -31,14 +31,27 @@ func main() {
 	fmt.Printf(str1, x1, y1, result1)
 	*/
 
-I_LOOP:
-	for i := 2; i <= 100; i++ {
-		for j := 2; j < i; j++ {
-			if i%j == 0 {
-				//fmt.Printf("%d is not a prime number\n", i)
-				continue I_LOOP
-			}
-		}
-		fmt.Printf("%d is a prime number\n", i)
-	}
+	/*
+
+	   PRIME NUMBER
+
+
+	   I_LOOP:
+	   	for i := 2; i <= 100; i++ {
+	   		for j := 2; j < i/2; j++ {
+	   			if i%j == 0 {
+	   				//fmt.Printf("%d is not a prime number\n", i)
+	   				continue I_LOOP
+	   			}
+	   		}
+	   		fmt.Printf("%d is a prime number\n", i)
+	   	}
+	   }
+	*/
+
+	fmt.Println("Enter the nums")
+	var num1, num2 int
+	fmt.Scanln(&num1, &num2)
+	fmt.Println("%d %d", num1, num2)
+
 }
