@@ -9,7 +9,7 @@ var DivideByZero = errors.New("DivideByZero error occured")
 
 func main() {
 
-	divide(3, 4)
+	divide(3, 1)
 }
 
 func checkDivideByZero(y int) error {
@@ -24,5 +24,7 @@ func divide(x, y int) {
 		quotient := x / y
 		remainder := x % y
 		fmt.Printf("Dividing %d by %d, quotient = %d and remainder = %d\n", x, y, quotient, remainder)
+	} else {
+		fmt.Printf("error found!!! %v\n", val)
 	}
 }
